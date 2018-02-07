@@ -10,18 +10,18 @@ const Calendar = () => (
             <a><MdArrowUpward /></a>2018<a><MdArrowDownward /></a>
         </div>
         <div className='month'>
-            <a>Janvier</a>
-            <a className='active'>Fevrier</a>
+            <a>Janv.</a>
+            <a className='active'>Fév.</a>
             <a>Mars</a>
-            <a>Avril</a>
+            <a>Avr.</a>
             <a>Mai</a>
-            <a>Juin</a>
-            <a>Juillet</a>
-            <a>Aout</a>
-            <a>Septembre</a>
-            <a>Octobre</a>
-            <a>Novembre</a>
-            <a>Decembre</a>
+            <a>Jui</a>
+            <a>Juill.</a>
+            <a>Août</a>
+            <a>Sept.</a>
+            <a>Oct.</a>
+            <a>Nov.</a>
+            <a>Dec.</a>
         </div>
     </div>
 );
