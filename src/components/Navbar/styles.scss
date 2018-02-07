@@ -20,6 +20,7 @@ nav {
         }
         span.plus {
             color: #E74C3C;
+            font-weight: 300;
         }
     }
     ul {
@@ -34,7 +35,6 @@ nav {
             display: block;
             cursor: pointer;
             padding: 12px 15px;
-            font-weight: 500;
             &:hover {
                 background: rgba(0, 0, 0, 0.06);
             }

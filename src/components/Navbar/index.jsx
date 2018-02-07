@@ -10,7 +10,7 @@ import './styles.scss';
 const Navbar = () => (
     <nav>
         <div className='header'>
-            <span>Tontine</span><span className="plus">Plus</span>
+            <span>Tontine</span><span className="plus"> Plus</span>
         </div>
         <ul>
             <li>
