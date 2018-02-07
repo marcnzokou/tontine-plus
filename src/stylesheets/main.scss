@@ -1,0 +1,33 @@
+@import '../../node_modules/purecss-sass/vendor/assets/stylesheets/purecss/_base.scss';
+@import '../../node_modules/purecss-sass/vendor/assets/stylesheets/purecss/_buttons.scss';
+@import '../../node_modules/purecss-sass/vendor/assets/stylesheets/purecss/_forms.scss';
+@import '../../node_modules/purecss-sass/vendor/assets/stylesheets/purecss/_grids-responsive.scss';
+@import '../../node_modules/purecss-sass/vendor/assets/stylesheets/purecss/_grids.scss';
+@import '../../node_modules/purecss-sass/vendor/assets/stylesheets/purecss/_menus.scss';
+@import '../../node_modules/purecss-sass/vendor/assets/stylesheets/purecss//_tables.scss';
+
+*{
+    letter-spacing: 0px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    list-style: none;
+}
+#layout {
+    padding-left: 250px;
+    left: 0;
+}
+section {
+    width: auto;
+}
+.header{
+    height: 45px;
+    border-bottom: 1px solid #E74C3C;
+    line-height:45px;
+    span {
+        line-height: 1;
+    }
+}

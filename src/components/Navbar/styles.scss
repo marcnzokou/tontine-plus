@@ -1,0 +1,68 @@
+nav {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.05);
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+    overflow-y: auto;
+    color: rgba(0, 0, 0, 0.8);
+    -webkit-overflow-scrolling: touch;
+
+    .header{
+        font-size: 20px;
+        font-weight: 900;
+        padding: 0px 15px;
+        padding: 0px 15px;
+        span.plus {
+            color: #E74C3C;
+            font-size: 35px;
+        }
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    ul li {
+        list-style: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        position: relative;
+        
+        a{
+            display: block;
+            cursor: pointer;
+            padding: 12px;
+            color: rgba(0, 0, 0, 0.6);
+            font-weight: 500;
+            &:hover {
+                background: rgba(0, 0, 0, 0.06);
+            }
+            svg {
+                padding-right: 10px;
+            }
+        }
+    }
+    .footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.06);
+        a {
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px;
+            color: #E74C3C;
+            &.f-right{
+                float: right;
+            }
+        }
+    }
+}
+
+svg {
+    position: relative;
+    font-size: 1.4em;
+    top: -2px;
+}

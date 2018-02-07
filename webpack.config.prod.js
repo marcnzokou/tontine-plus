@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const port = process.env.PORT || 4000;
-const outputPath = path.join(__dirname, "dist")
+const outputPath = path.join(__dirname, 'dist')
 
 module.exports = {
 	context: __dirname,
@@ -38,7 +38,7 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new ExtractTextPlugin("bundle.css"),
+		new ExtractTextPlugin('bundle.css'),
 		new webpack.optimize.UglifyJsPlugin({
 			compress: {
 				warnings: false
@@ -48,7 +48,7 @@ module.exports = {
 		}),
 		new webpack.EnvironmentPlugin({ NODE_ENV: 'production' }),
 	],
-	devtool: "source-map",
+	devtool: 'source-map',
 	devServer: {
 		port,
 		compress: true,

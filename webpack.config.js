@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const port = process.env.PORT || 4000;
-const outputPath = path.join(__dirname, "dist")
+const outputPath = path.join(__dirname, 'dist')
 
 module.exports = {
 	context: __dirname,
@@ -43,15 +43,15 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new ExtractTextPlugin("bundle.css"),
+		new ExtractTextPlugin('bundle.css'),
 		new webpack.HotModuleReplacementPlugin(),
 		new webpack.EnvironmentPlugin({ NODE_ENV: 'development' }),
 	],
-	devtool: "source-map",
+	devtool: 'source-map',
 	devServer: {
 		port,
 		hot: true,
 		historyApiFallback: true,
 		publicPath: '/dist/',
 	}
-}
+};
