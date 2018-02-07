@@ -1,5 +1,5 @@
 nav {
-    width: 250px;
+    width: 240px;
     position: fixed;
     top: 0;
     left: 0;
@@ -8,17 +8,18 @@ nav {
     background: rgba(0, 0, 0, 0.05);
     border-right: 1px solid rgba(0, 0, 0, 0.06);
     overflow-y: auto;
-    color: rgba(0, 0, 0, 0.8);
     -webkit-overflow-scrolling: touch;
-
-    .header{
+    z-index: 1;
+    .header {
         font-size: 20px;
         font-weight: 900;
         padding: 0px 15px;
-        padding: 0px 15px;
+        text-align: left;
+        span {
+            letter-spacing: -.08em;
+        }
         span.plus {
             color: #E74C3C;
-            font-size: 35px;
         }
     }
     ul {
@@ -29,12 +30,10 @@ nav {
         list-style: none;
         border-bottom: 1px solid rgba(0, 0, 0, 0.06);
         position: relative;
-        
-        a{
+        a {
             display: block;
             cursor: pointer;
-            padding: 12px;
-            color: rgba(0, 0, 0, 0.6);
+            padding: 12px 15px;
             font-weight: 500;
             &:hover {
                 background: rgba(0, 0, 0, 0.06);
@@ -44,7 +43,7 @@ nav {
             }
         }
     }
-    .footer{
+    .footer {
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -54,8 +53,17 @@ nav {
             display: inline-block;
             padding: 10px;
             color: #E74C3C;
-            &.f-right{
-                float: right;
+        }
+        .add {
+            a {
+                display: block;
+                cursor: pointer;
+                padding: 12px 2.5em;
+                color: rgba(0, 0, 0, 0.7);
+                &:hover {
+                    background: rgba(0, 0, 0, 0.06);
+                    color: #E74C3C;
+                }
             }
         }
     }

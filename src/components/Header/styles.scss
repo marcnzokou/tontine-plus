@@ -1,0 +1,51 @@
+.header {
+    text-align: center;
+    a {
+        color: #E74C3C;
+        font-size: 18px;
+        cursor: pointer;
+        &.f-right {
+            margin-top: 10px;
+            padding: 7px;
+            margin-right: 15px;
+            color: rgba(0, 0, 0, 0.7);
+            svg {
+                font-size: 1.22em;
+            }
+        }
+        svg {
+            font-size: 2em;
+        }
+    }
+    .calendar {
+        padding: 15px;
+        line-height: 1;
+        width: 245px;
+        color: rgba(0, 0, 0, 0.7);
+        .year {
+            color: #E74C3C;
+            padding: 10px 0px;
+            font-size: 18px;
+            svg {
+                font-size: 22px;
+                padding: 0px 5px;
+            }
+        }
+        .month {
+            a {
+                color: rgba(0, 0, 0, 0.7);
+                padding: 10px;
+                margin: 4px;
+                border-radius: 3px;
+                font-size: 14px;
+                background: #fff;
+                display: inline-block;
+                &:hover,
+                &.active {
+                    color: #fff;
+                    background: #E74C3C;
+                }
+            }
+        }
+    }
+}

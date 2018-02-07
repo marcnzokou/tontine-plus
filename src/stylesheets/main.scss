@@ -5,29 +5,67 @@
 @import '../../node_modules/purecss-sass/vendor/assets/stylesheets/purecss/_grids.scss';
 @import '../../node_modules/purecss-sass/vendor/assets/stylesheets/purecss/_menus.scss';
 @import '../../node_modules/purecss-sass/vendor/assets/stylesheets/purecss//_tables.scss';
-
-*{
-    letter-spacing: 0px;
+body {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
 }
+
+* {
+    letter-spacing: -.5px;
+}
+
+#main {
+    width: 100%;
+}
+
 ul {
     padding: 0;
     margin: 0;
 }
+
 ul li {
     list-style: none;
 }
+
 #layout {
-    padding-left: 250px;
+    padding-left: 240px;
     left: 0;
 }
+
 section {
     width: auto;
 }
-.header{
-    height: 45px;
+
+.f-right {
+    float: right;
+}
+
+.header {
+    height: 48px;
     border-bottom: 1px solid #E74C3C;
-    line-height:45px;
-    span {
+    background: rgba(0, 0, 0, 0.05);
+    line-height: 48px;
+    span,
+    a {
         line-height: 1;
     }
+}
+
+.__react_component_tooltip {
+    box-shadow: rgba(0, 0, 0, 0.3) 0 2px 10px;
+    padding: 0 !important;
+    font-size: 14px !important;
+}
+
+hr {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin: 0;
+    height: 1px;
+    border: 0;
+}
+
+.__react_component_tooltip.show {
+    pointer-events: all;
+    opacity: 1 !important;
 }
