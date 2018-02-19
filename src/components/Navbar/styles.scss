@@ -1,76 +1,42 @@
 nav {
-    width: 240px;
+    height: auto;
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
-    z-index: 1000;
-    background: rgba(0, 0, 0, 0.05);
-    border-right: 1px solid rgba(0, 0, 0, 0.06);
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    z-index: 1;
-    .header {
-        font-size: 20px;
-        font-weight: 900;
-        padding: 0px 15px;
-        text-align: left;
-        span {
-            letter-spacing: -.08em;
-        }
-        span.plus {
-            color: #E74C3C;
-            font-weight: 300;
-        }
-    }
+    bottom: 0px;
+    width: 45px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    background: rgba(242, 242, 242, 1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
     ul {
-        padding: 0;
-        margin: 0;
-    }
-    ul li {
-        list-style: none;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-        position: relative;
-        a {
-            display: block;
-            cursor: pointer;
-            padding: 12px 15px;
-            &:hover {
-                background: rgba(0, 0, 0, 0.06);
-            }
-            svg {
-                padding-right: 10px;
-            }
-        }
-    }
-    .footer {
         position: absolute;
-        bottom: 0;
         width: 100%;
-        border-top: 1px solid rgba(0, 0, 0, 0.06);
-        a {
-            cursor: pointer;
-            display: inline-block;
-            padding: 10px;
-            color: #E74C3C;
+        &.top{
+            top: 0;
         }
-        .add {
+        &.bottom{
+            bottom: 0;
+        }
+
+        li {
+            text-align: center;
             a {
+                padding: 7px 0;
                 display: block;
-                cursor: pointer;
-                padding: 12px 2.5em;
-                color: rgba(0, 0, 0, 0.7);
-                &:hover {
-                    background: rgba(0, 0, 0, 0.06);
-                    color: #E74C3C;
+                background: transparent;
+                color:  #8F75B6;
+                &:hover{
+                    background: rgba(131, 51, 255, 0.1);
+                    
                 }
             }
         }
     }
+   
 }
 
 svg {
     position: relative;
     font-size: 1.4em;
-    top: -2px;
 }

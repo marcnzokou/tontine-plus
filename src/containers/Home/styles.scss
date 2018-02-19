@@ -1,0 +1,123 @@
+/**
+    Home styles 
+**/ 
+
+.home {
+    .membership {
+        height: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0px;
+        width: 30%;
+        margin-bottom: 40px;
+        margin-top: 48px;
+        overflow: hidden;
+        .list-membership{
+            overflow-y: auto;
+            height: auto;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0px;
+            width: 30%;
+            margin-bottom: 42px;
+            margin-top: 99px;
+        }
+    }
+}
+
+
+// .home {
+//     position: relative;
+//     h2{
+//         margin: 0;
+//     }
+//     .beneficiary,
+//     .note {
+//         width: 60%;
+//     }
+//     .beneficiary{
+//         .m-15 {
+//             border-bottom: 3px solid rgba(0, 0, 0, 0.06);
+//             padding-bottom: 5px;
+//         }
+//         .date {
+//             font-size: 8em;
+//             p {
+//                 font-size: 14px;
+//                 margin-top: -15px;
+//                 margin-bottom: 0;
+//             }
+//         }
+//     }
+//     p{
+//         margin: 0;
+//         padding: 0;
+//     }
+//     .membership {
+//         position: absolute;
+//         right: 0;
+//         top: 0;
+//         width: 440px;
+//         min-height: 100%;
+//         .content{
+//             position: relative;
+//             width: auto;
+//             height: auto;
+//             border-left: 1px solid rgba(0, 0, 0, 0.07);
+//             h2 {
+//                 padding: 15px;
+//             }
+//             .list-membership {
+//                 overflow-y: scroll;
+//                 border-left: 1px solid rgba(0, 0, 0, 0.07);
+//                 position: relative;
+//                 width: 440px;
+//                 height: 88%;
+               
+//                 ul {
+                    
+//                     li {
+//                         position: relative;
+//                         .item {
+//                             padding: 10px 0;
+//                             p.count{
+//                                 position: absolute;
+//                                 padding: 0 10px;
+//                                 text-align: right;
+//                                 width: 23px;
+//                             }
+//                             .user {
+//                                 margin-left: 45px;
+//                                 padding-bottom: 5px;
+//                                 border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+//                             }
+//                         }
+                       
+//                     }
+//                 }
+
+//             }
+           
+//         }
+
+        
+        
+//     }
+// }
+
+// @media screen and (max-width: 1325px) {
+//     .beneficiary{
+//         padding-right: 0 !important;
+//     }
+//     .membership{
+//         top: auto !important;
+//         .content {
+//             margin-top: 0px !important;
+//             ul {
+//                 height: 56% !important;
+//             }
+//         }
+//     }
+// }

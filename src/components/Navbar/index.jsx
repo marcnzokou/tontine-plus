@@ -3,36 +3,45 @@
  */
 import React from 'react';
 import ReactTooltip from 'react-tooltip';
-import { MdHome, MdMoneyOff, MdGroup, MdAssignment, MdSettings, MdAdd } from 'react-icons/lib/md';
+import { MdHome, MdMoneyOff, MdGroup, MdAssignment, MdSettings, MdAdd, MdSearch, MdPerson } from 'react-icons/lib/md';
 import Add from './Add';
 import './styles.scss';
 
 const Navbar = () => (
     <nav>
-        <div className='header'>
-            <span>Tontine</span><span className="plus"> Plus</span>
-        </div>
-        <ul>
+        <ul className="top">
             <li>
-                <a><MdHome />Home</a>
+                <a><MdHome /></a>
             </li>
             <li>
-                <a><MdMoneyOff />Béneficiares</a>
+                <a><MdSearch /></a>
             </li>
             <li>
-                <a><MdGroup />Membres</a>
+                <a><MdMoneyOff /></a>
             </li>
             <li>
-                <a><MdAssignment />Charte</a>
+                <a><MdGroup /></a>
+            </li>
+            <li>
+                <a><MdAssignment /></a>
             </li>
         </ul>
-        <div className='footer'>
-            <a ><MdSettings /></a>
-            <a data-tip data-for='add' data-event='click focus' className="f-right"><MdAdd /></a>
-            <ReactTooltip id='add' globalEventOff='click' type='light'>
-                <Add />
-            </ReactTooltip>
-        </div>
+        <ul className="bottom">
+            <li>
+                <a data-tip data-for='add' data-event='click focus' className="f-right"><MdAdd /></a>
+                <ReactTooltip id='add' type='light'>
+                    <Add />
+                </ReactTooltip>
+            </li>
+            <li>
+                <a><MdPerson /></a>
+            </li>
+            <li>
+                <a><MdSettings /></a>
+            </li>
+           
+        </ul>
+       
     </nav>
 );
 

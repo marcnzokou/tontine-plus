@@ -36,6 +36,18 @@ module.exports = {
 				use: ['babel-loader']
 			},
 			{
+				test: /\.(png|jpg|gif|svg)$/,
+				use: [
+					{
+					  loader: 'url-loader',
+					  options: {
+						limit: 8192,
+						name: '[name].[hash:7].[ext]'
+					  }
+					}
+				  ]
+			},
+			{
 				test: /\.js$/,
 				exclude: /node_modules/,
 				use: ['babel-loader', 'eslint-loader']

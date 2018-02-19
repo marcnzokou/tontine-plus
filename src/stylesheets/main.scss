@@ -1,76 +1,54 @@
-@import '../../node_modules/purecss-sass/vendor/assets/stylesheets/purecss/_base.scss';
-@import '../../node_modules/purecss-sass/vendor/assets/stylesheets/purecss/_buttons.scss';
-@import '../../node_modules/purecss-sass/vendor/assets/stylesheets/purecss/_forms.scss';
-@import '../../node_modules/purecss-sass/vendor/assets/stylesheets/purecss/_grids-responsive.scss';
-@import '../../node_modules/purecss-sass/vendor/assets/stylesheets/purecss/_grids.scss';
-@import '../../node_modules/purecss-sass/vendor/assets/stylesheets/purecss/_menus.scss';
-@import '../../node_modules/purecss-sass/vendor/assets/stylesheets/purecss//_tables.scss';
-body {
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.7);
-    font-weight: 200;
+html, body {
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: -0.03em;
+    font-size: 1em;
 }
-
-.bold {
-    font-weight: 700;
+a {
+    cursor: pointer;
 }
-
-* {
-    letter-spacing: -.1px;
-}
-
-#main {
-    width: 100%;
-}
-
-ul {
+ul{
     padding: 0;
     margin: 0;
 }
-
 ul li {
     list-style: none;
 }
 
-#layout {
-    padding-left: 240px;
+.container {
+    position: fixed;
+    top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
 }
-
+.layout{
+    width: 100%;
+    padding-left: 45px;
+}
 section {
-    width: auto;
-}
-
-.f-right {
-    float: right;
-}
-
-.header {
-    height: 48px;
-    border-bottom: 1px solid #E74C3C;
-    background: rgba(0, 0, 0, 0.05);
-    line-height: 48px;
-    span,
-    a {
-        line-height: 1;
-    }
+    height: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0px;
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
 }
 
 .__react_component_tooltip {
-    box-shadow: rgba(0, 0, 0, 0.3) 0 2px 10px;
+    height: auto;
+    top: 0 !important;
+    left: 46px !important;
+    margin-left: 0 !important;
+    bottom: 0px;
+    width: auto;
+    pointer-events: initial !important;
+    margin-bottom: 30px;
     padding: 0 !important;
-    font-size: 14px !important;
-}
-
-hr {
-    background: rgba(0, 0, 0, 0.1);
-    padding: 0;
-    margin: 0;
-    height: 1px;
-    border: 0;
-}
-
-.__react_component_tooltip.show {
-    pointer-events: all;
-    opacity: 1 !important;
+    box-shadow: 10px 0 9px -11px #aaa;
 }
