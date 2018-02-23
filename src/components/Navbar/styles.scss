@@ -7,8 +7,8 @@ nav {
     width: 45px;
     margin-bottom: 30px;
     overflow: hidden;
-    background: rgba(242, 242, 242, 1);
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    background: #f4f4f4;
+    border-right: 1px solid #eaeaea;
     ul {
         position: absolute;
         width: 100%;
@@ -22,21 +22,21 @@ nav {
         li {
             text-align: center;
             a {
+                color: #666666;
                 padding: 7px 0;
                 display: block;
                 background: transparent;
-                color:  #8F75B6;
                 &:hover{
-                    background: rgba(131, 51, 255, 0.1);
-                    
+                    background: #C7E0F4;
+                    color:  rgba(7, 71, 166, 1);
                 }
+                
             }
         }
     }
-   
 }
 
 svg {
     position: relative;
-    font-size: 1.4em;
+    font-size: 19px;
 }

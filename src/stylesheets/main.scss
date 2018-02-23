@@ -1,11 +1,14 @@
+html, body {height:100%}
 html, body {
     width:100%;
     height:100%;
     margin:0;
     padding:0;
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: -0.03em;
-    font-size: 1em;
+    font-family: "ApexNew-Medium",Helvetica,Arial,sans-serif;
+    letter-spacing: 0em;
+    text-decoration: none;
+    font-size: 13px;
+    color: #000;
 }
 a {
     cursor: pointer;
@@ -17,7 +20,9 @@ ul{
 ul li {
     list-style: none;
 }
-
+.text-right{
+    text-align: right !important;
+}
 .container {
     position: fixed;
     top: 0;
@@ -29,26 +34,106 @@ ul li {
     width: 100%;
     padding-left: 45px;
 }
-section {
-    height: auto;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0px;
-    width: 100%;
-    margin-bottom: 30px;
-    overflow: hidden;
+.__react_component_tooltip {
+    pointer-events: initial !important;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 5px 0px rgba(0,0,0,0.4);
+    box-shadow: 0 0 5px 0px rgba(0,0,0,0.4); 
+}
+.__react_component_tooltip.show {
+    top: auto !important;
 }
 
 .__react_component_tooltip {
-    height: auto;
-    top: 0 !important;
-    left: 46px !important;
-    margin-left: 0 !important;
-    bottom: 0px;
-    width: auto;
-    pointer-events: initial !important;
-    margin-bottom: 30px;
     padding: 0 !important;
-    box-shadow: 10px 0 9px -11px #aaa;
 }
+
+section {
+    // height: auto;
+    // position: fixed;
+    // top: 0;
+    // right: 0;
+    // bottom: 0px;
+    // width: 100%;
+    // margin-bottom: 30px;
+    // overflow: hidden;
+}
+.inline-block {
+    display: inline-block;
+}
+.formControl {
+    margin: 5px 0;
+    text-align: left;
+    input {
+        display: block;
+        width: 100%;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #eaeaea;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        padding: 7px 15px;
+        margin-top: 4px;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box; 
+    }
+    .radio {
+        display: inline-block;
+        padding-right: 15px;
+        padding-top: 20px;
+        input, label {
+            display: inline-block;
+            width: auto;
+            margin-bottom: 0;
+        }
+    }
+    label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 10px;
+        span {
+            color: red;
+        }
+    }
+    button {
+        color: #fff;
+        background-color: rgba(7, 71, 166, 1);
+        border-color: rgba(7, 71, 166, 1);
+        
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        cursor: pointer;
+        margin-left: 15px;
+        svg {
+            font-size: 12px;
+        }
+    }
+    .btn{
+        display: inline-block;
+        text-align: right;
+        width: 50%;
+    }
+    .required {
+        width: 50%;
+        span {
+            color: red;
+        }
+        color: #666;
+        display: inline-block;
+    }
+}
+

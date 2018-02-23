@@ -1,15 +1,46 @@
 .membership {
-    .list-membership::before{
-        background: transparent url("../../../images/bkg.png") repeat;
-        position: absolute;
-        top: 0;
-        overflow: hidden;
-        width: 89%;
-        left: 6%;
-        height: 100%;
-        content: ""
-    }
-    h2{
-        margin-bottom: 0px;
+    width: 100%;
+    border-left: 1px solid #eaeaea;
+    .content{
+        .title{
+            text-transform: uppercase;
+            padding: 20px;
+            font-size: 25px;
+            font-weight: 600;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .formControl {
+            margin: 0;
+            padding: 0 10px;
+        }
+        .list {
+            margin-top: 114px;
+            position: fixed;
+            width: 350px;
+            bottom: 0;
+            height: auto;
+            right: 0;
+            top: 0;
+            margin-bottom: 30px;
+            overflow-y: auto;
+            ul {
+                border-top: 1px solid #eaeaea;
+                li {
+                    text-transform: uppercase;
+                    a {
+                        display: block;
+                        p {
+                            margin: 0 12px;
+                            border-bottom: 1px solid #eaeaea;
+                            padding: 10px 0;
+                        }
+                        &:hover{
+                            background: #C7E0F4;
+                            color:  rgba(7, 71, 166, 1);
+                        }
+                    }
+                }
+            }
+        }
     }
 }

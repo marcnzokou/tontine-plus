@@ -9,9 +9,15 @@ import Notes from './Notes';
 
 const Home = () => (
     <div className="layout-inner">
-       home
        <div className="home">
-           home
+           <div className="calendar">
+                <div className="content-left">
+                    home
+                </div>
+           </div>
+           <div className="memberships">
+                <Memberships />
+           </div>
         </div>
     </div>
 );

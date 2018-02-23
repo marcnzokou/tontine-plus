@@ -4,10 +4,9 @@
 import React from 'react';
 
 const MembershipItem = ({ item }) => (
-    <div className="item">
-        <p className="count">&nbsp;</p>
-        <div className="user">&nbsp;</div>
-    </div>
+    <a>
+        <p>{item.firstName} { item.lastName}</p>
+    </a>
 );
 
 export default MembershipItem;
