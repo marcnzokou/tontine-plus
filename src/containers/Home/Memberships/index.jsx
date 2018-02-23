@@ -10,19 +10,18 @@ import MembershipItem from './MembershipItem';
 
 const Memberships = ({ listMembers }) => (
     <div className="membership">
-        <div className="content">
-            <div className="title">Membres (5)</div>
-            <div className="formControl">
-                <input type="text" placeholder="Rechercher un membre..." />
-            </div>
-            <div className="list">
-                <ul>
-                    {listMembers.map(function(member, index){
-                        return <li key={index}><MembershipItem item={member} /></li>;
-                    })}
-                </ul>
-            </div>
+        <div className="title">Membres <span>(0)</span></div>
+        <div className="formControl search">
+            <input type="text" placeholder="Rechercher un membre..." />
         </div>
+        <div className="list">
+            <ul>
+                {listMembers.map(function(member, index){
+                    return <li key={index}><MembershipItem item={member} /></li>;
+                })}
+            </ul>
+        </div>
+        
     </div>
 );
 
