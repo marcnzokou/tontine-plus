@@ -1,14 +1,4 @@
-import * as types from '../constants/ActionTypes';
-
-let memberId = 0;
-
-// add to member 
-export const addToMember = member => {
-    return {
-        type: types.ADD_TO_MEMBER,
-        payload: { 
-            id: memberId++,
-            ...member
-        }
-    };
-};
+export const ADD_TO_MEMBER = 'ADD_TO_MEMBER';
+export const RECEIVE_TO_ADD_MEMBER = 'RECEIVE_TO_ADD_MEMBER';
+export const GET_ALL_MEMBERS = 'GET_ALL_MEMBERS';
+export const RECEIVE_MEMBERS = 'RECEIVE_MEMBERS';

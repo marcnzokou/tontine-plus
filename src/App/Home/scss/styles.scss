@@ -1,0 +1,69 @@
+@import "../../../assets/styles/styles.scss";
+
+.content{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: $heightHeader + $heightCalendar;
+    z-index: -3;
+    .content-section{
+        width: 100%;
+        position: relative;
+        height: 100%;
+        overflow-y: scroll;
+        background: #fff;
+    }
+}
+
+.new {
+    .tooltip-new{
+        left: 15px !important;
+        padding: 0px 0px !important;
+        background: $secondColor !important;
+        &:after {
+            border-bottom-color: $secondColor !important;
+            margin-left: -45px !important;
+        }
+    }
+    ul.add-nav {
+        width: auto;
+        color: $white;
+        li {
+            display: block;
+            padding: 0;
+            margin: 0;
+            &:first-child{
+                a {
+                    border-top: 0px solid $borderNav;
+                }
+            }
+            a {
+                background-color: transparent;
+                height: auto;
+                line-height: 13px;
+                padding: 8px 30px 4px 15px;
+                border-top: 1px solid $borderNav;
+                border-radius: 0px;
+                svg {
+                    font-size: 2em;
+                    padding-right: 10px;
+                }
+                &:hover {
+                    background-color: $secondColorhover;
+                    color: $secondColor;
+                }
+            }
+        }
+    }
+    line-height: 31px !important; 
+    .title {
+        font-weight: 600;
+        padding: 8px 51px 8px 15px;
+        background: $bgNav;
+        color: $secondColor;
+        font-size: $fontSize;
+        border-bottom: 1px solid $borderNav;
+    }
+
+    
+}

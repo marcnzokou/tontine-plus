@@ -1,0 +1,77 @@
+@import "../../../assets/styles/styles.scss";
+
+.navbar{
+    .search-member{
+        background-color: transparent;
+        border: 0px solid #ced4da;
+        padding: .275rem .75rem
+    }
+    .filter {
+        border-top: 1px solid $borderNav;
+        padding: 0 15px;
+        background: $white;
+        margin-top: -48px;
+        p {
+            width: 78%;
+            display: inline-block;
+            font-size: $fontSize;
+            font-weight: 600;
+            margin: 10px 0;
+            padding: 0;
+        }
+        a{
+            display: inline-block;
+            text-align: right;
+            color: $secondColor;
+            font-weight: 600;
+        }
+    }
+    .fixed {
+        top:0;
+        position: fixed;
+        height: 100%;
+        left: 0;
+        padding-top: 133px;
+        width: $widthNav;
+        z-index: -1;
+    }
+   ul.list{
+       width: 100%;
+       position: relative;
+       height: 100%;
+       left: 0;
+       border-top: 1px solid $borderNav;
+       overflow-y: auto;
+       background: $white;
+       li {
+           a {
+               display: block;
+               padding: 10px 15px 10px 52px;
+               border-bottom: 1px solid $borderNav;
+               position: relative;
+               font-weight: 600;
+               line-height: 17px;
+               background: transparent;
+               .bigramme{
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+               }
+               p{
+                   padding: 0;
+                   margin: 0;
+                   font-weight: 300;
+                   color: $fontColorMedium;
+                   
+                   span {
+                        color: $secondColor;
+                   }
+               }
+               &:hover, &.active{
+                    color: $secondColor;
+                    background: $thirdColor;
+               }
+           }
+       }
+   }
+}

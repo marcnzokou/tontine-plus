@@ -1,0 +1,96 @@
+.flex {
+    display: flex;
+}
+.flex-auto {
+    flex: 1 50%;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a {
+    cursor: pointer;
+}
+.text-right{
+    text-align: right;
+}
+svg {
+    font-size: 1.5em;
+    position: relative;
+    top: -1px;
+}
+.padding-15 {
+    padding: 15px;
+}
+.padding-7-10 {
+    padding: 7px 10px;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: $fontColor;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btnForm {
+    background: $secondColor;
+    color: $white;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    cursor: pointer;
+    margin-left: 15px;
+    svg {
+        font-size: 12px;
+    }
+}
+.btn-form{
+    display: inline-block;
+    margin-top: 15px;
+}
+.required {
+    margin-top: 15px;
+    display: inline-block;
+}
+table {
+    width: 100%;
+}
+label {
+    font-weight: 600;
+}
+.formControl {
+    padding: 2px 5px;
+}
+.radio {
+    display: inline-block;
+}
+
+.bigramme {
+    display: inline-block;
+    padding: 8px 5px;
+    font-size: 12px;
+    line-height: 1;
+    color: $white;
+    background-color: $secondColor;
+    border-radius: 20px;
+}

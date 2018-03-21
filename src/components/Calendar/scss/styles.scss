@@ -1,0 +1,25 @@
+@import "../../../assets/styles/styles.scss";
+
+.calendar {
+    position: fixed;
+    height: $heightHeader + $heightCalendar;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -2;
+    padding-top: $heightHeader;
+    background: $bgNav;
+    border-bottom: 1px solid $borderNav;
+    .section-fixed{
+        a {
+            color: $secondColor;
+            background: transparent;
+            display: inline-block;
+            padding: 10px; 
+            &:hover{
+                background: $secondColor;
+                color: $white;
+            }
+        }
+    }
+}

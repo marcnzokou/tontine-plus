@@ -1,0 +1,54 @@
+@import "../../../assets/styles/styles.scss";
+
+header {
+    height: $heightHeader;
+    color: $white;
+    background-color: $primaryColor;
+    line-height: $heightHeader;
+    padding: 0 12px;
+    
+    .logo{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 10px;
+    }
+    ul {
+        width: auto;
+        li {
+            display: inline-block;
+            margin: 0 3px;
+            padding: 7px 0px;
+            a {
+                background-color: transparent;
+                border-radius: 3px;
+                display: block;
+                height: $heightHeader - 14px;
+                line-height: $heightHeader - 14px;
+                padding: 0px 10px;
+                &:hover {
+                    background-color: $secondColorhover;
+                    color: $secondColor;
+                }
+            }
+        }
+    }
+    ul.left {
+        a.btn {
+            background-color: $primaryColored;
+            font-weight: 500;
+            &:hover {
+                background-color: $secondColorhover;
+            }
+            svg {
+                padding-right: 5px;
+                padding-top: -3px;
+            }
+        }
+        a.new{
+            background-color: $secondColor;
+        }
+    }
+    
+    
+}

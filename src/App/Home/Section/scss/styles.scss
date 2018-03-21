@@ -1,0 +1,159 @@
+@import "../../../../assets/styles/styles.scss";
+.HomeSection{
+    width: 100%;
+    display: table;
+    position: relative;
+    height: 100%;
+    top: 0;
+    .month {
+        text-align: center;
+        border-bottom: 1px solid #ebebeb;
+        padding: 8px 15px;
+        font-weight: 600;
+        font-size: $fontSize;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        background: $thirdColor;
+        a{
+            &:hover{
+                color: $secondColor;
+            }
+            &.left{
+                margin-right: 10px;
+            }
+            &.right{
+                margin-left: 10px;
+            }
+        }
+       
+    }
+    .zone-section{
+        width: 100%;
+        display: table;
+        width: 100%;
+        display: table;
+        position: absolute;
+        height: 100%;
+        padding-top: 44px;
+        border-bottom: 1px solid #ebebeb;
+        svg {
+            color: $secondColor;
+        }
+        .dateTime, .beneficiary, .note, .memberShip {
+           display: table-cell;
+           border-right: 1px solid #ebebeb;
+           position: relative;
+           padding-top: 40px;
+        }
+
+        .header-home-section {
+            position: absolute;
+            top: 0;
+            height: 40px;
+            border-bottom: 1px solid #ebebeb;
+            line-height: 40px;
+            width: 100%;
+            font-weight: 600;
+            text-align: left;
+            padding: 0 15px;
+            color: $secondColor;
+        }
+
+        .dateTime{
+            vertical-align: middle;
+            width: 20%;
+            text-align: center;
+            .day{
+                line-height: 4em;
+                p {
+                    margin: 0;
+                    font-size: 8em;
+                }
+                p.location {
+                    margin: 0;
+                    font-size: 13px;
+                    line-height: 14px;
+                    padding: 10px;
+                    
+                }
+            }
+        }
+        .beneficiary{
+            vertical-align: middle;
+            width: 25%;
+            text-align: center;
+            .user-money{
+                background: $thirdColor;
+                padding-bottom: 15px;
+                border-bottom: 1px solid #ebebeb;
+                border-top: 1px solid #ebebeb;
+                margin-top: 30px;
+                .btn-beneficiary {
+                    text-align: right;
+                    a{
+                        background: $thirdColor;
+                        display: inline-block;
+                        padding: 5px;
+                        border-top: 1px solid #ebebeb;
+                        border-left: 1px solid #ebebeb;
+                        &:hover{
+                            svg {
+                                color: $secondColor;
+                            }
+                        }
+                    }
+                    margin-top: -32px;
+                    svg{
+                        font-size: 20px;
+                        color: $fontColorMedium;
+                    }
+                }
+            }
+            .user{
+                padding: 15px;
+            }
+            svg{
+                font-size: 5em;
+            }
+            color: $fontColor;
+            p{
+                margin: 0;
+                svg{
+                    font-size: 15px;
+                }
+                &.name {
+                    font-size: $fontSize;
+                    font-weight: 600;
+                    color: $fontColor;
+                    padding-top: 15px;
+                    line-height: 17px;
+                }
+                span {
+                    color: $secondColor;
+                }
+            }
+            .money{
+                border-top: 1px solid #ebebeb;
+                margin: 0px 15px;
+                padding-top: 20px;
+                p {
+                    font-size: 3em;
+                    color: $secondColor;
+                    font-weight: 600;
+                    span {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        .note{
+            vertical-align: top;
+            width: 30%;
+        }
+        .memberShip{
+            vertical-align: top;
+            width: 25%;
+        }
+    }
+}

@@ -65,5 +65,8 @@ module.exports = {
 		hot: true,
 		historyApiFallback: true,
 		publicPath: '/dist/',
+	},
+	node: {
+		fs: 'empty'
 	}
 };
