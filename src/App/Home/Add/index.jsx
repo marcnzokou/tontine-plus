@@ -3,7 +3,7 @@ import { MdGroupAdd, MdArrowDropDown, MdAdd, MdFormatListBulleted } from 'react-
 import ReactTooltip from 'react-tooltip';
 import SkyLight from 'react-skylight';
 
-import AddMember from '../Member/AddMember';
+import AddMember from '../Members/AddMember';
 
 const Add = ({ addMember }) => (
     <div className="new">

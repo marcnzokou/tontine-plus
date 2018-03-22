@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const port = process.env.PORT || 4000;
-const outputPath = path.join(__dirname, 'dist')
+const outputPath = path.join(__dirname, 'dist');
 
 module.exports = {
 	context: __dirname,

@@ -1,0 +1,29 @@
+.skylight-wrapper{
+    color: $fontColor;
+}
+.skylight-dialog {
+    width: auto !important;
+    padding: 0 !important;
+    box-shadow: 0 0 7px #555 !important;
+    border-radius: 3px !important;
+    .title {
+        font-weight: 600;
+        padding: 8px 51px 8px 15px;
+        background: $bgNav;
+        font-size: $fontSize;
+        border-bottom: 1px solid $borderNav;
+    }
+    
+
+}
+.skylight-close-button {
+    margin: 7px 0px;
+    padding: 0px 10px !important;
+    line-height: 31px !important;
+    font-weight: 500 !important;
+    border: 0px !important;
+    &:hover {
+        background: transparent !important;
+        color: $secondColor !important;
+    }
+}

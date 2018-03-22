@@ -29,6 +29,12 @@ svg {
 *, ::after, ::before {
     box-sizing: border-box;
 }
+.p-absolute{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+}
 .form-control {
     display: block;
     width: 100%;

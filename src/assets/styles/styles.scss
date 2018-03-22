@@ -2,6 +2,7 @@
 @import "_variables.scss";
 @import "_utils.scss";
 @import "_tooltip.scss";
+@import "_skylight.scss";
 
 body, html {
     padding: 0;
@@ -40,20 +41,3 @@ body, html {
     padding-left: $widthNav;
 }
 
-.skylight-wrapper{
-    color: $fontColor;
-}
-.skylight-dialog {
-    width: auto !important;
-    padding: 0 !important;
-    box-shadow: 0 0 7px #555 !important;
-    border-radius: 3px !important;
-
-}
-.skylight-close-button {
-    margin: 7px 0px;
-    &:hover {
-        background: transparent;
-        color: $secondColor;
-    }
-}
