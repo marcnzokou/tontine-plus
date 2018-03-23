@@ -31,8 +31,9 @@
                     }
                     padding: 10px 15px !important;
                     font-weight: 300 !important;
-                    &:hover {
+                    &:hover, &.active {
                         background: $white !important;
+                        color: $secondColor;
                     }
                 }
             }
@@ -48,7 +49,36 @@
             font-weight: 600;
             color: $secondColor;
             border-bottom: 1px solid #ebebeb;
-           
+        }
+        form {
+            padding: 20px;
+            table tbody tr td {
+                label {
+                    display: inline-block;
+                    text-align: right;
+                    width: 60%;
+                    padding-right: 15px;
+                }
+                input, select {
+                    display: inline-block;
+                    width: 40%;
+                }
+                .checkbox{
+                    position: relative;
+                    label {
+                        width: 100%;
+                        text-align: left;
+                        font-weight: 300;
+                        padding-right: 0;
+                        padding-left: 30px;
+                    }
+                    input {
+                        width: auto;
+                        position: absolute;
+                        top: auto;
+                    }
+                }
+            }
         }
     }
 }

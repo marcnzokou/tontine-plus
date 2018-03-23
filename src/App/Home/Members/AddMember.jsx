@@ -69,6 +69,8 @@ class AddMember extends React.Component {
                                 name="firstName"
                                 state={this.state.firstName}
                                 change={this.handleChange}
+                                span = ""
+                                required = {true}
                                 />
                             </td>
                             <td><Input 
@@ -77,6 +79,8 @@ class AddMember extends React.Component {
                                 name="lastName"
                                 state={this.state.lastName}
                                 change={this.handleChange}
+                                span = ""
+                                required = {true}
                                 />
                             </td>
                         </tr>
@@ -87,6 +91,8 @@ class AddMember extends React.Component {
                                 name="email"
                                 state={this.state.email}
                                 change={this.handleChange}
+                                span = ""
+                                required = {true}
                                 />
                             </td>
                             <td><Input 
@@ -95,6 +101,8 @@ class AddMember extends React.Component {
                                 name="phone"
                                 state={this.state.phone}
                                 change={this.handleChange}
+                                span = ""
+                                required = {true}
                                 />
                             </td>
                         </tr>
@@ -105,6 +113,8 @@ class AddMember extends React.Component {
                                 name="address"
                                 state={this.state.address}
                                 change={this.handleChange}
+                                span = ""
+                                required = {true}
                                 />
                             </td>
                         </tr>
