@@ -1,10 +1,11 @@
 @import "../../../../assets/styles/styles.scss";
 .HomeSection{
-    width: 100%;
+    min-width: 8.33%;
     display: table;
     position: relative;
     height: 100%;
     top: 0;
+    float: left;
     .month {
         text-align: center;
         border-bottom: 1px solid #ebebeb;
@@ -85,10 +86,9 @@
             text-align: center;
             .user-money{
                 background: $thirdColor;
-                padding-bottom: 15px;
                 border-bottom: 1px solid #ebebeb;
                 border-top: 1px solid #ebebeb;
-                margin-top: 30px;
+                margin-top: 40px;
                 .btn-beneficiary {
                     text-align: right;
                     a{
@@ -110,9 +110,26 @@
                     }
                 }
             }
-            .user{
-                padding: 15px;
+            .padding-1 {
+                padding-bottom: 10px;
+                .user{
+                    padding: 15px;
+                }
+                p.name, .money{
+                    padding-top: 15px;
+                }
+
             }
+            .padding-2, .padding-3, .padding-4, .padding-5 {
+                padding-bottom: 0px;
+                .user{
+                    padding: 5px;
+                }
+                p.name, .money {
+                    padding-top: 5px;
+                }
+            }
+            
             svg{
                 font-size: 5em;
             }
@@ -126,7 +143,6 @@
                     font-size: $fontSize;
                     font-weight: 600;
                     color: $fontColor;
-                    padding-top: 15px;
                     line-height: 17px;
                 }
                 span {
@@ -136,7 +152,6 @@
             .money{
                 border-top: 1px solid #ebebeb;
                 margin: 0px 15px;
-                padding-top: 20px;
                 p {
                     font-size: 3em;
                     color: $secondColor;

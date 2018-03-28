@@ -35,20 +35,7 @@ svg {
     top: 0;
     width: 100%;
 }
-.form-control {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: $fontColor;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    
-}
+
 .euro{
     position: relative;
     input {
@@ -73,25 +60,28 @@ svg {
     }
 }
 .btnForm {
-    background: $secondColor;
-    color: $white;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    cursor: pointer;
-    margin-left: 15px;
-    svg {
-        font-size: 12px;
+    padding-top: 15px;
+    button {
+        background: $secondColor;
+        color: $white;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: 7px 15px;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        cursor: pointer;
+        margin-left: 5px;
+        svg {
+            font-size: 12px;
+        }
     }
 }
 .btn-form{
@@ -105,19 +95,37 @@ svg {
 table {
     width: 100%;
 }
-label {
-    font-weight: 600;
-    span {
-        color: red;
-        font-weight: 300;
+
+.radio {
+    label {
+        display: inline-block !important;
     }
 }
 .formControl {
     padding: 2px 5px;
+    label {
+        font-weight: 600;
+        display: block;
+        span {
+            color: red;
+            font-weight: 300;
+        }
+    }
+    input[type='text'], select {
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: $fontColor;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
 }
-.radio {
-    display: inline-block;
-}
+
 
 .bigramme {
     display: inline-block;
@@ -127,4 +135,7 @@ label {
     color: $white;
     background-color: $secondColor;
     border-radius: 20px;
+}
+.none {
+    display: none !important;
 }

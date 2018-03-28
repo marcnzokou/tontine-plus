@@ -6,15 +6,15 @@ import Memberships from './Memberships';
 
 import './scss/styles.scss';
 
-const HomeSection = ({ date }) => (
+const Section = ({ date, content, members }) => (
   <div className="HomeSection">
-        <Date type="header" date={date} />
+        <Date type="header" date={date} content={content}/>
         <div className="zone-section">
             <div className="dateTime">
-                <Date date={date} />
+                <Date type={null} date={date} content={null}/>
             </div>
             <div className="beneficiary">
-                <Beneficiary />
+                <Beneficiary members={members}/>
             </div>
             <div className="note">
                <Notes />
@@ -26,4 +26,4 @@ const HomeSection = ({ date }) => (
   </div>
 );
 
-export default HomeSection;
+export default Section;

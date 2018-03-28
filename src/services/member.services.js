@@ -1,11 +1,12 @@
 import { memberList, saved } from './mock/_members';
 import { Observable } from 'rxjs/Observable';
+// import { ajax } from 'rxjs/observable/dom/ajax';
 
 const TIMEOUT = 100;
 // const MAX_CHECKOUT = 2; // max different items
  
 
-const getMembers = () => {
+const getAllMembers = () => {
     return new Observable(observer => {
         const timerId = setTimeout(() => {
           observer.next(memberList);
@@ -29,7 +30,27 @@ const addMember = (member) => {
     });
 };
 
+const updateMember = (member) => {
+
+    var updateMember = memberList.map(item => {
+        if(item.id === member.id) {
+            return member;
+        }
+        return item;
+    });
+    saved(updateMember);
+
+    return new Observable(observer => {
+        const timerId = setTimeout(() => {
+          observer.next(member);
+          observer.complete();
+        }, TIMEOUT);
+        return () => clearTimeout(timerId);
+    });
+};
+
 export default {
-    getMembers,
-    addMember
+    getAllMembers,
+    addMember,
+    updateMember
 };

@@ -2,9 +2,9 @@ import React from 'react';
 import './scss/styles.scss';
 import { connect } from 'react-redux';
 import {  MdExpandMore } from 'react-icons/lib/md';
-import Members from '../../components/Members';
+import ListMembers from '../Members/list';
 
-const Navbar = ({ memberList }) => (
+const Navbar = ({ all }) => (
   <nav>
     <div className="navbar">
         <div className="padding-7-10">
@@ -15,16 +15,14 @@ const Navbar = ({ memberList }) => (
                 <p>Membres</p>
                 <a>Filter <MdExpandMore/></a>
             </div>
-            <Members membersList={memberList} />
+            <ListMembers all={all} />
         </div>
     </div>
   </nav>
 );
 
-
 const mapStateToProps = state => {
-    return { memberList : state.members };
+    return { all : state.members };
 };
-
 
 export default connect(mapStateToProps)(Navbar);

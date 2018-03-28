@@ -7,11 +7,16 @@
     padding-top: $heightHeader + $heightCalendar;
     z-index: -3;
     .content-section{
-        width: 100%;
+        max-width: 100%;
         position: relative;
         height: 100%;
-        overflow-y: scroll;
+        overflow: hidden;
         background: #fff;
+        #scroll-session{
+            height: 100%;
+            width: 1200%;
+            margin-left: 0;
+        }
     }
 }
 

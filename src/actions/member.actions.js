@@ -1,35 +1,61 @@
 import * as actions from './';
-
-let memberId = 0;
+const uid = () => Math.random().toString(34).slice(2);
 
 // add to member 
-export const addToMember = (member) => {
-    return {
-        type: actions.ADD_TO_MEMBER,
-        payload: { 
-            id: memberId++,
-            ...member
-        }
-    };
-};
+export const addMember = member => ({
+    type: actions.ADD_MEMBER,
+    id: uid(),
+    member
+});
 
-export const receiveToMember = (member) => {
-    return {
-      type: actions.RECEIVE_TO_ADD_MEMBER,
-      payload: member
-    };
-};
+export const addSettingMember = setting => ({
+    type: actions.ADD_MEMBER_SETTING,
+    setting
+});
 
-export const getAllMembers = () => {
-    return {
-        type: actions.GET_ALL_MEMBERS
-    };
-};
+export const setVisibilityFilter = filter => ({
+    type: actions.SET_VISIBILITY_FILTER,
+    filter
+});
 
-export const receiveMembers = (members) => {
-    console.log(members);
-    return {
-      type: actions.RECEIVE_MEMBERS,
-      payload: members
-    };
-};
+export const selectMember = id => ({
+    type: actions.SELECT_MEMBER,
+    id
+});
+
+/**
+ * get 
+ */
+export const getAllMembers = () => ({
+    type: actions.GET_ALL_MEMBERS
+});
+
+export const receiveAllMembers = (members) => ({
+    type: actions.RECEIVE_ALL_MEMBERS,
+    payload: members
+});
+
+// // select member 
+// export const selectMember = (member) => {
+//     return {
+//       type: actions.SELECT_MEMBER,
+//       payload: member
+//     };
+// };
+
+// export const updateMember = (member) => {
+//     return {
+//       type: actions.UPDATE_MEMBER,
+//       payload: member
+//     };
+// };
+
+
+// export const receiveMember = (member) => {
+//     return {
+//       type: actions.RECEIVE_MEMBER,
+//       payload: member
+//     };
+// };
+
+

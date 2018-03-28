@@ -1,4 +1,4 @@
-const memberModel = {
+export const memberModel = {
     sex: '',
     firstName: '',
     lastName: '',
@@ -7,14 +7,12 @@ const memberModel = {
     address: '',
     settings: {
         general : {
-            language: 'francais',
-            admission: 0,
-            payment: 0,
+            language: 'FR',
+            admission: '',
+            payment: '',
             payMonth: '',
             notificationByEmail: true,
             notificationBySms: true
         }
     }
 };
-
-export default memberModel;

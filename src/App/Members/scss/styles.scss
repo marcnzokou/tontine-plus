@@ -1,4 +1,4 @@
-@import "../../../../assets/styles/styles.scss";
+@import "../../../assets/styles/styles.scss";
 
 .add {
     form {
@@ -25,6 +25,8 @@
         ul {
             li {
                 a{
+                    display: block;
+                    border-bottom: 1px solid #ebebeb;
                     svg {
                         color: $secondColor;
                         padding-right: 4px;
@@ -59,11 +61,11 @@
                     width: 60%;
                     padding-right: 15px;
                 }
-                input, select {
+                input[type='text'], select {
                     display: inline-block;
                     width: 40%;
                 }
-                .checkbox{
+                &.checkbox{
                     position: relative;
                     label {
                         width: 100%;

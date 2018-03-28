@@ -1,25 +1,16 @@
-import React from 'react'; 
-import { MdMood, MdClear, MdRemoveRedEye } from 'react-icons/lib/md';
+import React from 'react';
+import BeneficiaryMember from '../../../components/Members/beneficiary';
 
-const Beneficiary = () => (
+const Beneficiary = ({ members }) => (
     <div>
         <div className="header-home-section">
             <span>Beneficiare</span>
         </div>
-        <div className="user-money">
-            <div className="btn-beneficiary">
-                <a><MdRemoveRedEye /></a>
-                <a><MdClear /></a>
-            </div>
-            <div className="user">
-                <MdMood />
-                <p className="name">Marc NZOKOU </p>
-                <p>Cotisation :<span> 300€</span> </p>
-            </div>
-            <div className="money">
-                Montant attendu : <p>1200<span>€</span></p> 
-            </div>
-        </div>
+        <ul>
+            {members.map((item, index)=> 
+                <li key={index}> <BeneficiaryMember item={item} nb={members.length}/></li>
+            )}
+        </ul>
     </div>
 );
 

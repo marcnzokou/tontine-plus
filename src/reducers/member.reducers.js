@@ -1,33 +1,41 @@
 import {
-    ADD_TO_MEMBER,
-    RECEIVE_MEMBERS,
-    // RECEIVE_TO_ADD_MEMBER
+    ADD_MEMBER,
+    // RECEIVE_ALL_MEMBERS,
+    SELECT_MEMBER,
+    // UPDATE_MEMBER
 } from '../actions';
 
-const initialState = [];
 
-const memberReducers = (state = initialState, action) => {
+const memberReducers = (state = [], action) => {
     switch (action.type) {
-
-        case ADD_TO_MEMBER:
+        
+        case ADD_MEMBER:
             return [
                 ...state,
-                action.payload
+                {
+                    id: action.id,
+                    member: action.member,
+                    selected: false
+                }
             ];
-        
-        // case RECEIVE_TO_ADD_MEMBER:
-        // //     return [
-        // //         ...state,
-        // //         action.payload
-        // //     ];
 
-        case RECEIVE_MEMBERS:
-            state = action.payload;
-            return state;
+        case SELECT_MEMBER:
+            return state.map(item =>
+                (item.id === action.id)
+                ? {...item, selected: true}
+                : {...item, selected: false}
+            );
+           
+        // case RECEIVE_ALL_MEMBERS:
+        //     return action.payload;
             
         default:
             return state;
     }
 };
+
+export const getMemberSelected = (state = []) => state.filter((item) => (item.selected == true));
+
+
 
 export default memberReducers;
