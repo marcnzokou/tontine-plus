@@ -1,28 +1,23 @@
 import React from 'react';
 import './scss/styles.scss';
-import { connect } from 'react-redux';
 import {  MdExpandMore } from 'react-icons/lib/md';
 import ListMembers from '../Members/list';
 
-const Navbar = ({ all }) => (
-  <nav>
-    <div className="navbar">
-        <div className="padding-7-10">
-            <input type="text" className="form-control search-member" placeholder="Rechercher un membre..."/>
-        </div>
-        <div className="fixed">
-            <div className="filter">
-                <p>Membres</p>
-                <a>Filter <MdExpandMore/></a>
+const Navbar = ({appDOM, members}) => (
+    <nav>
+        <div className="navbar">
+            <div className="formControl padding-7-10">
+                <input type="text" className=" search-member" placeholder="Rechercher un membre..."/>
             </div>
-            <ListMembers all={all} />
+            <div className="fixed">
+                <div className="filter">
+                    <p>Membres</p>
+                    <a>Filter <MdExpandMore/></a>
+                </div>
+                <ListMembers members={members} appDOM={appDOM}/>
+            </div>
         </div>
-    </div>
-  </nav>
+    </nav>
 );
 
-const mapStateToProps = state => {
-    return { all : state.members };
-};
-
-export default connect(mapStateToProps)(Navbar);
+export default Navbar;

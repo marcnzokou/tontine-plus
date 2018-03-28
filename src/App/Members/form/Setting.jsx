@@ -13,10 +13,10 @@ const submit = async (values, dispatch) => {
 };
 
 const SettingMember = (props) => {
-    
+
     const { handleSubmit, pristine, submitting, datas } = props;
     const { member } = datas;
-    
+
     return (
         <div className="setting-member">
             <div className="menu">
@@ -56,7 +56,7 @@ const SettingMember = (props) => {
                                 </tr>
                                 <tr>
                                     <td className="formControl">
-                                        <label>Combien souhait-je cotiser ? / mois : </label>
+                                        <label>Combien souhaite cotiser ? / mois : </label>
                                         <Field
                                             name="payment"
                                             component="input"
@@ -66,9 +66,9 @@ const SettingMember = (props) => {
                                     </td>
                                 </tr>
                                 <tr>
-                                    
+
                                     <td className="formControl">
-                                        <label>Quand souhait-je béneficier ? : </label>
+                                        <label>Quand souhaite béneficier ? : </label>
                                         <Field name="payMonth" component="select">
                                             <option />
                                             <option value="01">Janvier</option>
@@ -99,7 +99,7 @@ const SettingMember = (props) => {
                                         <label>Souhaitez-vous recevoir les notifications par sms des actions faites par vous ou de l'adminstrateur ?</label>
                                     </td>
                                 </tr>
-                               
+
                                 <tr>
                                     <td className="btnForm text-right">
                                         <button type="submit" disabled={pristine || submitting}>Envoyer</button>

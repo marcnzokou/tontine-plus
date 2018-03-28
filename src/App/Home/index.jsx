@@ -13,11 +13,6 @@ class Home extends React.Component {
             ref:'scrollSession'
         };
     }
-
-    // getMembersBeneficiary(datas, value) {
-    //     return datas.filter((item)=> item.settings.general.payMonth == value);
-    // }
-
     render() {
         return (
             <div className="container">
@@ -26,7 +21,7 @@ class Home extends React.Component {
                     <div className="section-fixed content">
                         <div className="content-section">
                             <div id="scroll-session" ref={this.state.ref}>
-                                { MonthDatas.map((item, index) => 
+                                { MonthDatas.map((item, index) =>
                                     (<Section key={index} date={item.value} content={this} members={[]}/>)
                                 )}
                             </div>
@@ -40,5 +35,5 @@ class Home extends React.Component {
 
 const mapStateToProps = state => {
     return { all : state.members };
-}; 
+};
 export default connect(mapStateToProps)(Home);

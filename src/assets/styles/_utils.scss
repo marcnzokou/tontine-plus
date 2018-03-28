@@ -1,47 +1,58 @@
 .flex {
     display: flex;
 }
+
 .flex-auto {
     flex: 1 50%;
 }
+
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
+
 a {
     cursor: pointer;
 }
-.text-right{
+
+.text-right {
     text-align: right;
 }
+
 svg {
     font-size: 1.5em;
     position: relative;
     top: -1px;
 }
+
 .padding-15 {
     padding: 15px;
 }
+
 .padding-7-10 {
     padding: 7px 10px;
 }
-*, ::after, ::before {
+
+*,
+ ::after,
+ ::before {
     box-sizing: border-box;
 }
-.p-absolute{
+
+.p-absolute {
     position: absolute;
     height: 100%;
     top: 0;
     width: 100%;
 }
 
-.euro{
+.euro {
     position: relative;
     input {
         padding-right: 40px;
     }
-    &::after{
+    &::after {
         content: "€";
         color: $secondColor;
         right: 0px;
@@ -59,6 +70,7 @@ svg {
         border-left: 1px solid #ebebeb;
     }
 }
+
 .btnForm {
     padding-top: 15px;
     button {
@@ -76,22 +88,23 @@ svg {
         padding: 7px 15px;
         line-height: 1.5;
         border-radius: .25rem;
-        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
         cursor: pointer;
         margin-left: 5px;
-        svg {
-            font-size: 12px;
-        }
+        font-size: 13px;
     }
 }
-.btn-form{
+
+.btn-form {
     display: inline-block;
     margin-top: 15px;
 }
+
 .required {
     margin-top: 15px;
     display: inline-block;
 }
+
 table {
     width: 100%;
 }
@@ -101,17 +114,20 @@ table {
         display: inline-block !important;
     }
 }
+
 .formControl {
-    padding: 2px 5px;
+    padding: 5px;
     label {
         font-weight: 600;
         display: block;
+        padding: 5px 0px;
         span {
             color: red;
             font-weight: 300;
         }
     }
-    input[type='text'], select {
+    input[type='text'],
+    select {
         display: block;
         width: 100%;
         padding: .375rem .75rem;
@@ -122,10 +138,9 @@ table {
         background-clip: padding-box;
         border: 1px solid #ced4da;
         border-radius: .25rem;
-        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     }
 }
-
 
 .bigramme {
     display: inline-block;
@@ -136,6 +151,7 @@ table {
     background-color: $secondColor;
     border-radius: 20px;
 }
+
 .none {
     display: none !important;
 }

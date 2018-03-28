@@ -2,28 +2,29 @@
     box-shadow: 0 0 7px #555;
     opacity: 1 !important;
 }
+
 .__react_component_tooltip {
     pointer-events: initial !important;
     padding: 0px !important;
     background: $bgNav;
 }
+
 .tooltip-member {
     padding: 15px;
     box-shadow: 0 0 7px #fff !important;
     border: 1px solid $fontColorSmall;
     background: $thirdColor !important;
-
     &:after {
         border-right-color: $fontColorSmall !important;
     }
-    a{
+    a {
         color: $fontColorMedium;
         padding: 10px 25px 10px 15px !important;
         font-weight: 300 !important;
         svg {
             padding-right: 5px !important;
         }
-        &:hover{
+        &:hover {
             background: $white !important;
         }
     }

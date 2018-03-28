@@ -1,21 +1,20 @@
 @import "../../../assets/styles/styles.scss";
-
 .add {
     form {
         padding: 15px;
         width: 640px;
-    
     }
 }
+
 .setting-member {
     width: 740px;
-    .menu{
+    .menu {
         position: absolute;
         background: $thirdColor;
         width: 200px;
         height: 400px;
         border-right: 1px solid #ebebeb;
-        p{
+        p {
             padding: 15px;
             margin: 0;
             font-size: $fontSize;
@@ -24,7 +23,7 @@
         }
         ul {
             li {
-                a{
+                a {
                     display: block;
                     border-bottom: 1px solid #ebebeb;
                     svg {
@@ -33,7 +32,8 @@
                     }
                     padding: 10px 15px !important;
                     font-weight: 300 !important;
-                    &:hover, &.active {
+                    &:hover,
+                    &.active {
                         background: $white !important;
                         color: $secondColor;
                     }
@@ -41,10 +41,10 @@
             }
         }
     }
-    .corps{
+    .corps {
         width: 100%;
         padding-left: 200px;
-        p{
+        p {
             margin: 0;
             padding: 15px 48px 15px 15px;
             font-size: $fontSize;
@@ -60,12 +60,15 @@
                     text-align: right;
                     width: 60%;
                     padding-right: 15px;
+                    padding-top: 0 !important;
+                    padding-bottom: 0 !important;
                 }
-                input[type='text'], select {
+                input[type='text'],
+                select {
                     display: inline-block;
                     width: 40%;
                 }
-                &.checkbox{
+                &.checkbox {
                     position: relative;
                     label {
                         width: 100%;

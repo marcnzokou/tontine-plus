@@ -1,6 +1,7 @@
-.skylight-wrapper{
+.skylight-wrapper {
     color: $fontColor;
 }
+
 .skylight-dialog {
     width: auto !important;
     padding: 0 !important;
@@ -8,14 +9,13 @@
     border-radius: 3px !important;
     .title {
         font-weight: 600;
-        padding: 8px 51px 8px 15px;
-        background: $bgNav;
+        padding: 15px 51px 15px 15px;
+        color: $secondColor;
         font-size: $fontSize;
         border-bottom: 1px solid $borderNav;
     }
-    
-
 }
+
 .skylight-close-button {
     margin: 7px 0px;
     padding: 0px 10px !important;

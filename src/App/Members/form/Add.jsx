@@ -24,7 +24,7 @@ const AddMember = props => {
                             <td colSpan="2" className="formControl text-right radio">
                             <label>
                                 <Field name="sex" component="input" type="radio" value="male" />
-                                {' '} Homme
+                                {' '} Homme &nbsp;&nbsp;
                             </label>
                             <label>
                                 <Field name="sex" component="input" type="radio" value="female" />

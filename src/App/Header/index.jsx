@@ -1,15 +1,15 @@
 import React from 'react';
 import { MdArrowDropDown, MdNotificationsNone, MdAccountCircle } from 'react-icons/lib/md';
 
-import Add from '../Home/Add';
+import Add from './Add';
 import './scss/styles.scss';
 
-const Header = () => (
+const Header = ({appDOM}) => (
   <header>
     <div className="flex">
       <div className="flex-auto">
         <ul className="left">
-            <li><Add /></li>
+            <li><Add appDOM={appDOM} /></li>
             <li><a className="btn">Import</a></li>
             <li><a className="btn">Chartes</a></li>
         </ul>
