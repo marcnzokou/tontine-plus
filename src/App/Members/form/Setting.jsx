@@ -12,8 +12,11 @@ const submit = async (values, dispatch) => {
     return dispatch(addSettingMember(values));
 };
 
-const SettingMember = props => {
-    const { handleSubmit, pristine, submitting } = props;
+const SettingMember = (props) => {
+    
+    const { handleSubmit, pristine, submitting, datas } = props;
+    const { member } = datas;
+    
     return (
         <div className="setting-member">
             <div className="menu">
@@ -24,7 +27,9 @@ const SettingMember = props => {
                 </ul>
             </div>
                 <div className="corps">
-                    <p>looo</p>
+                    <p>
+                        { (member) ? member.firstName : ''} { (member) ? member.lastName : ''}
+                    </p>
                     <form onSubmit={handleSubmit(submit)}>
                         <table>
                             <tbody>

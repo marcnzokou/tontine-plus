@@ -32,7 +32,7 @@ export const getAllMembers = () => ({
 
 export const receiveAllMembers = (members) => ({
     type: actions.RECEIVE_ALL_MEMBERS,
-    payload: members
+    members
 });
 
 // // select member 
@@ -51,11 +51,11 @@ export const receiveAllMembers = (members) => ({
 // };
 
 
-// export const receiveMember = (member) => {
-//     return {
-//       type: actions.RECEIVE_MEMBER,
-//       payload: member
-//     };
-// };
+export const receiveMember = (member) => {
+    return {
+      type: actions.RECEIVE_MEMBER,
+      payload: member
+    };
+};
 
 

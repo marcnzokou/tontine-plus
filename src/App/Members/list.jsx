@@ -2,6 +2,7 @@ import React from 'react';
 import SkyLight from 'react-skylight';
 import ItemMemberList from '../../components/ItemMember';
 import SettingMember from './form/Setting';
+import { getMemberSelected } from '../../reducers/member.reducers';
 
 class ListMembers extends React.Component {
     constructor(props){
@@ -21,7 +22,7 @@ class ListMembers extends React.Component {
                     )}
                 </ul>
                 <SkyLight hideOnOverlayClicked ref={this.state.ref}>
-                    <SettingMember/>
+                    <SettingMember datas={getMemberSelected(this.props.all)}/>
                 </SkyLight>
             </div>
         );

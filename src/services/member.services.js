@@ -16,9 +16,9 @@ const getAllMembers = () => {
     });
 };
 
-const addMember = (member) => {
-    
-    memberList.push(member);
+const addMember = (id, member) => {
+   
+    memberList.push({id, member});
     saved(memberList);
 
     return new Observable(observer => {

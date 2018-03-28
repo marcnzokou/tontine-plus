@@ -1,8 +1,8 @@
 import {
     ADD_MEMBER,
-    // RECEIVE_ALL_MEMBERS,
+    RECEIVE_ALL_MEMBERS,
     SELECT_MEMBER,
-    // UPDATE_MEMBER
+    ADD_MEMBER_SETTING
 } from '../actions';
 
 
@@ -19,6 +19,14 @@ const memberReducers = (state = [], action) => {
                 }
             ];
 
+        case ADD_MEMBER_SETTING:
+            const { id } = getMemberSelected(state);
+            return state.map(item =>
+                (item.id === id)
+                ? {...item, setting: { ...action.setting }}
+                : {...item}
+            );
+
         case SELECT_MEMBER:
             return state.map(item =>
                 (item.id === action.id)
@@ -26,15 +34,20 @@ const memberReducers = (state = [], action) => {
                 : {...item, selected: false}
             );
            
-        // case RECEIVE_ALL_MEMBERS:
-        //     return action.payload;
+        case RECEIVE_ALL_MEMBERS:
+            return [
+                ...action.members
+            ];
             
         default:
             return state;
     }
 };
 
-export const getMemberSelected = (state = []) => state.filter((item) => (item.selected == true));
+export const getMemberSelected = (state = []) => {
+    const tab = state.filter((item) => (item.selected == true));
+    return (tab.length > 0) ? { ...tab[0] } : {};
+};
 
 
 
