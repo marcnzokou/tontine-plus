@@ -78,5 +78,16 @@
                 }
             }
         }
+        .nav-tooltip{
+            background: $thirdColor;
+            a{
+                display: inline-block;
+                width: 25%;
+                padding: 8px 0;
+                color: $fontColorMedium;
+                text-align: center;
+                border-right: 1px solid #ebebeb;
+            }
+        }
     }
 }

@@ -1,20 +1,21 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight, MdLocationOn } from 'react-icons/lib/md';
-import { getLabelSessionlMonth, getDate } from '../../../services';
+import { getLabelMonth } from '../../../reducers/session.reducers';
 import { ScrollToHorizontal } from '../../../components/Scrollable';
 
-const Date = ({ type, date, content }) => (
+const Date = ({ type, date, session }) => (
     <div>
         { type ? (
             <div className="month">
-                <a className={(date == '01')? 'none' : 'left'} onClick={()=> ScrollToHorizontal('left', content, '100%')}><MdKeyboardArrowLeft /></a> 
-                    {getLabelSessionlMonth(date)}
-                <a className={(date == '12')? 'none' : 'right'} onClick={()=> ScrollToHorizontal('right', content, '100%')}><MdKeyboardArrowRight /></a>
+                <a className={(date == '01')? 'none' : 'left'} onClick={()=> ScrollToHorizontal('left', '100%')}><MdKeyboardArrowLeft /></a> 
+                    {getLabelMonth(date)}
+                <a className={(date == '12')? 'none' : 'right'} onClick={()=> ScrollToHorizontal('right', '100%')}><MdKeyboardArrowRight /></a>
             </div>
         ) : (
             <div className="day">
-                <p>{ getDate() }</p>
-                { getLabelSessionlMonth(date) }
+                <p>{session.currentDay}</p>
+                { getLabelMonth(date) } {session.currentSession}
                 <p className="location">
                     <MdLocationOn /><br />
                     Epinay-sur-seine, Ile-de-france
@@ -25,4 +26,8 @@ const Date = ({ type, date, content }) => (
         
 );
 
-export default Date;
+const mapStateToProps = state =>({
+    session: state.session
+});
+
+export default connect(mapStateToProps)(Date);

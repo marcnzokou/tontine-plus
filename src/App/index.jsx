@@ -16,8 +16,6 @@ import Navbar from './Navbar';
 import AddMember from './Members/form/Add';
 import SettingMember from './Members/form/Setting';
 
-import { getMemberSelected } from '../reducers/member.reducers';
-
 class App extends React.Component {
   constructor(props) {
      super(props);
@@ -39,7 +37,7 @@ class App extends React.Component {
               <AddMember />
         </SkyLight>
         <SkyLight hideOnOverlayClicked ref={this.state.refSetting} >
-              <SettingMember datas={getMemberSelected(this.props.all)}/>
+              <SettingMember />
         </SkyLight>
       </div>
     );

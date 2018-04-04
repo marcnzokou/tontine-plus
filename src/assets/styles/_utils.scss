@@ -70,6 +70,22 @@ svg {
         border-left: 1px solid #ebebeb;
     }
 }
+.btnForm{
+    button, .loader{
+        display: inline-block;
+    }
+}
+.loader{
+    vertical-align: middle;
+    width: auto;
+    padding-top: 1px;
+    padding-left: 6px;
+    img {
+        width: 30px;
+        position: relative;
+    }
+
+}
 
 .btnForm {
     padding-top: 15px;
@@ -94,7 +110,9 @@ svg {
         font-size: 13px;
     }
 }
-
+.inline-block{
+    display: inline-block;
+}
 .btn-form {
     display: inline-block;
     margin-top: 15px;
@@ -107,6 +125,12 @@ svg {
 
 table {
     width: 100%;
+}
+
+button:disabled,
+button[disabled]{
+    opacity: 0.5;
+    cursor: auto;
 }
 
 .radio {

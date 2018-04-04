@@ -1,5 +1,7 @@
 
-export const memberList = (localStorage.getItem('members')) ?  JSON.parse(localStorage.getItem('members')) : [];
+export const getAll = () => (
+    (localStorage.getItem('members')) ?  JSON.parse(localStorage.getItem('members')) : []
+);
 
 export const saved = (membersObject) => {
     localStorage.removeItem('members');

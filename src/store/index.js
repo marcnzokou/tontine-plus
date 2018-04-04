@@ -6,6 +6,7 @@ import { createEpicMiddleware } from 'redux-observable';
 import reducer from '../reducers';
 import { rootEpic } from '../epics';
 import * as memberActions from '../actions/member.actions';
+import * as sessionActions from '../actions/session.actions';
 
 const epicMiddleware = createEpicMiddleware(rootEpic);
 
@@ -19,6 +20,11 @@ const store = createStore(
     applyMiddleware(...middleware, epicMiddleware)
 );
 
+
+/**
+ * init state
+ */
 store.dispatch(memberActions.getAllMembers());
+store.dispatch(sessionActions.getSession());
 
 export default store;

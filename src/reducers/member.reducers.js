@@ -2,9 +2,9 @@ import {
     ADD_MEMBER,
     RECEIVE_ALL_MEMBERS,
     SELECT_MEMBER,
-    ADD_MEMBER_SETTING
+    ADD_MEMBER_SETTING,
+    UPDATE_MEMBER
 } from '../actions';
-
 
 const memberReducers = (state = [], action) => {
     switch (action.type) {
@@ -19,12 +19,21 @@ const memberReducers = (state = [], action) => {
                 }
             ];
 
-        case ADD_MEMBER_SETTING:
-            const { id } = getMemberSelected(state);
+        case UPDATE_MEMBER:
+            var { id } = getMemberSelected(state);
             return state.map(item =>
-                (item.id === id) ?
-                {...item, setting: {...action.setting } } :
-                {...item }
+                (item.id === id)
+                ? { ...item, member: action.member }
+                : { ...item }
+            );
+
+        case ADD_MEMBER_SETTING:
+            var { id } = getMemberSelected(state);
+
+            return state.map(item =>
+                (item.id === id)
+                ? { ...item, settings: action.settings }
+                : { ...item }
             );
 
         case SELECT_MEMBER:
@@ -44,9 +53,31 @@ const memberReducers = (state = [], action) => {
     }
 };
 
+
+/**
+ * get member selected
+ * @param {} state 
+ */
 export const getMemberSelected = (state = []) => {
     const tab = state.filter((item) => (item.selected == true));
-    return (tab.length > 0) ? {...tab[0] } : {};
+    return (tab.length > 0) ? {...tab[0] } : undefined;
 };
+
+/**
+ * get month
+ * @param {*} month 
+ * @param {*} state 
+ */
+export const getMemberOfMonth = (month, labelSession, state = []) => {
+    var values = state.filter((item)=> {
+        if(item.settings[labelSession]){
+            if(item.settings[labelSession].payMonth) {
+                return parseInt(item.settings[labelSession].payMonth) === parseInt(month.value);
+            }
+        }
+    });
+    return values;
+};
+
 
 export default memberReducers;

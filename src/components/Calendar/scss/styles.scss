@@ -23,3 +23,40 @@
         }
     }
 }
+
+.tooltip-calendar {
+    position: relative;
+    padding-top: 5px;
+    padding-left: 15px;
+    svg {
+        color: $secondColor;
+    }
+    .month{
+        svg{
+            position: absolute;
+            left: 38px;
+            top: 9px;
+        }
+    }
+    
+    ul{
+        width: auto;
+        margin-left: 15px;
+        border-radius: 3px;
+        background: $secondColor !important;
+        border: 2px solid $secondColor !important;
+        li{
+            display: inline-block;
+            a{
+                display: block;
+                color: $white !important;;
+                background: transparent !important;
+                padding: 5px 17px 5px 17px !important;
+                &:hover, &.active{
+                    background: $white !important;
+                    color: $secondColor !important;
+                }
+            }
+        }
+    }
+}

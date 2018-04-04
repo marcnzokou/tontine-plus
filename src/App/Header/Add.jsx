@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { reset } from 'redux-form';
 import { MdGroupAdd, MdArrowDropDown, MdAdd, MdFormatListBulleted } from 'react-icons/lib/md';
 import ReactTooltip from 'react-tooltip';
-import SkyLight from 'react-skylight';
 
 const Add = (props) => {
     const { dispatch, appDOM } = props;

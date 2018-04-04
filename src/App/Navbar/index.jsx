@@ -1,7 +1,7 @@
 import React from 'react';
 import './scss/styles.scss';
 import {  MdExpandMore } from 'react-icons/lib/md';
-import ListMembers from '../Members/list';
+import ListMembers from '../Members/List';
 
 const Navbar = ({appDOM, members}) => (
     <nav>

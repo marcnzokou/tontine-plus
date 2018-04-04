@@ -1,6 +1,8 @@
 import * as actions from './';
 const uid = () => Math.random().toString(34).slice(2);
 
+
+
 // add to member 
 export const addMember = member => ({
     type: actions.ADD_MEMBER,
@@ -8,15 +10,23 @@ export const addMember = member => ({
     member
 });
 
-export const addSettingMember = setting => ({
-    type: actions.ADD_MEMBER_SETTING,
-    setting
+export const updateMember = member => ({
+    type: actions.UPDATE_MEMBER,
+    member
 });
 
-export const setVisibilityFilter = filter => ({
-    type: actions.SET_VISIBILITY_FILTER,
-    filter
+export const addSettingMember = settings => ({
+    type: actions.ADD_MEMBER_SETTING,
+    settings
 });
+
+export const receiveMember = (member) => {
+    return {
+      type: actions.RECEIVE_MEMBER,
+      member
+    };
+};
+
 
 export const selectMember = id => ({
     type: actions.SELECT_MEMBER,
@@ -50,12 +60,5 @@ export const receiveAllMembers = (members) => ({
 //     };
 // };
 
-
-export const receiveMember = (member) => {
-    return {
-      type: actions.RECEIVE_MEMBER,
-      payload: member
-    };
-};
 
 
