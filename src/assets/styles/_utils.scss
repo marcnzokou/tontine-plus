@@ -126,7 +126,12 @@ svg {
 table {
     width: 100%;
 }
-
+a.no-active{
+    pointer-events: none;
+    cursor: default;
+    text-decoration:none;
+    text-decoration: line-through;
+}
 button:disabled,
 button[disabled]{
     opacity: 0.5;

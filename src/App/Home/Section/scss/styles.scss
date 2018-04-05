@@ -82,7 +82,7 @@
         }
         .beneficiary{
             vertical-align: middle;
-            width: 25%;
+            width: 22%;
             text-align: center;
             .user-money{
                 background: $thirdColor;
@@ -165,11 +165,47 @@
         }
         .note{
             vertical-align: top;
-            width: 30%;
+            width: 23%;
         }
         .memberShip{
             vertical-align: top;
-            width: 25%;
+            width: 35%;
+            ul{
+                width: 100%;
+                li{
+                    position: relative;
+                    margin: 10px;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #ebebeb;
+                    padding-right: 40px;
+                    span.name{
+                        font-weight: 600;
+                    }
+                    span.num{
+                        border-right: 1px solid #ebebeb;
+                        padding-right: 5px;
+                        margin-right: 9px;
+                        width: 26px;
+                        display: inline-block;
+                        color: $secondColor;
+                        text-align: center;
+                    }
+                    a:hover{
+                        svg{
+                            color: $secondColor;
+                        }
+                    }
+                    svg{
+                        position: absolute;
+                        padding-left: 6px;
+                        width: 25px;
+                        font-size: 1.5em;
+                        right: 0;
+                        border-left: 1px solid #ebebeb;
+                        color: $fontColorMedium;
+                    }
+                }
+            }
         }
     }
 }

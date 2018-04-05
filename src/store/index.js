@@ -7,6 +7,7 @@ import reducer from '../reducers';
 import { rootEpic } from '../epics';
 import * as memberActions from '../actions/member.actions';
 import * as sessionActions from '../actions/session.actions';
+import * as membershipActions from '../actions/membership.action';
 
 const epicMiddleware = createEpicMiddleware(rootEpic);
 
@@ -26,5 +27,6 @@ const store = createStore(
  */
 store.dispatch(memberActions.getAllMembers());
 store.dispatch(sessionActions.getSession());
+store.dispatch(membershipActions.getAllMembership());
 
 export default store;

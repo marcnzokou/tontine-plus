@@ -6,6 +6,7 @@ import {
     UPDATE_MEMBER
 } from '../actions';
 
+
 const memberReducers = (state = [], action) => {
     switch (action.type) {
 
@@ -62,6 +63,7 @@ export const getMemberSelected = (state = []) => {
     const tab = state.filter((item) => (item.selected == true));
     return (tab.length > 0) ? {...tab[0] } : undefined;
 };
+
 
 /**
  * get month

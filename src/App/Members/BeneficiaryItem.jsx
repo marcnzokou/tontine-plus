@@ -1,7 +1,7 @@
 import React from 'react'; 
 import { MdMood, MdClear, MdRemoveRedEye } from 'react-icons/lib/md';
 
-const BeneficiaryMember = ({item, labelSession, nb}) => (
+const BeneficiaryItem = ({item, labelSession, nb}) => (
     <div className={'user-money '+'padding-'+nb}>
         <div className="btn-beneficiary">
             <a><MdRemoveRedEye /></a>
@@ -18,4 +18,4 @@ const BeneficiaryMember = ({item, labelSession, nb}) => (
     </div>
 );
 
-export default BeneficiaryMember;
+export default BeneficiaryItem;

@@ -20,7 +20,7 @@ const Section = ({ date, labelSession, members }) => (
                <Notes />
             </div>
             <div className="memberShip">
-                <Memberships />
+                <Memberships date={date} labelSession={labelSession}/>
             </div>
         </div>
   </div>

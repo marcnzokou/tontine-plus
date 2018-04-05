@@ -45,20 +45,5 @@ export const receiveAllMembers = (members) => ({
     members
 });
 
-// // select member 
-// export const selectMember = (member) => {
-//     return {
-//       type: actions.SELECT_MEMBER,
-//       payload: member
-//     };
-// };
-
-// export const updateMember = (member) => {
-//     return {
-//       type: actions.UPDATE_MEMBER,
-//       payload: member
-//     };
-// };
-
 
 
